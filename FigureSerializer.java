@@ -18,7 +18,6 @@ public class FigureSerializer extends StdSerializer<Figure> {
     @Override
     public void serialize(Figure figure, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
         jsonGenerator.writeStartObject();
-        jsonGenerator.writeStringField("type", figure.toString());
-        jsonGenerator.writeNumberField("height", square.getSideA());
+       
     }
 }
