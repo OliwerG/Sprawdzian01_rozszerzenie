@@ -12,9 +12,6 @@ public class FigureSerializer extends StdSerializer<Figure> {
         super(t);
     }
 
-    Square square;
-
-
     @Override
     public void serialize(Figure figure, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
         jsonGenerator.writeStartObject();
